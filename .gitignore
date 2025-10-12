@@ -1,0 +1,34 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if any)
+node_modules/
+
+# Python virtual environments (if any)
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+*.log
+
+# Playwright artifacts
+.playwright-mcp/
+
+# Credentials (if any sensitive files exist)
+*.key
+*.pem
+*.env
+
+# System files
+.cache/
