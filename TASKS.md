@@ -1,9 +1,9 @@
 # Task Tracking - Alley-Reborn Discovery
 
 ## ESTADO ATUAL
-**TAREFA_ATIVA**: Sprint 2 ✅ COMPLETO | Sprint 3 pronto para iniciar
-**ÚLTIMA_ATUALIZAÇÃO**: 2025-10-10 23:50
-**PROGRESSO_GERAL**: 10/20 tarefas completadas (50%)
+**TAREFA_ATIVA**: Sprint 3 - Processar Reuniões (Task 3.2 em curso)
+**ÚLTIMA_ATUALIZAÇÃO**: 2025-10-11 13:30
+**PROGRESSO_GERAL**: 11/23 tarefas completadas (48%)
 
 ---
 
@@ -195,11 +195,11 @@
 ---
 
 ## SPRINT 3: Processar Reuniões
-**STATUS**: TODO
+**STATUS**: ⏳ EM PROGRESSO
 **DEPENDÊNCIAS**: Sprint 1 completo
 **OBJETIVO**: Extrair insights de reuniões com clientes
 
-### Task 3.1 - Processar reunião Hoopers x SLAM [TODO]
+### Task 3.1 - Processar reunião Hoopers x SLAM [✅ COMPLETO]
 **DEPENDÊNCIAS**: Task 1.2
 **RESPONSÁVEL**: Sistema
 
@@ -207,18 +207,19 @@
 - Link: `https://attio.link/call/Call-Hoopers-x-SLAM-44J51ILV935ZPAgkjgYQE/transcript`
 
 **AÇÕES**:
-- [ ] Acessar link Attio
-- [ ] Extrair transcrição completa
-- [ ] Criar pasta `/02-meetings/[YYYY-MM-DD]-hoopers-slam/`
-- [ ] Criar `attio-link.md`
-- [ ] Criar `transcript.md`
-- [ ] Criar `key-insights.md` com análise
-- [ ] Criar `action-items.md`
-- [ ] Atualizar `/02-meetings/INDEX.md`
+- [✓] Acessar link Attio
+- [✓] Extrair transcrição completa
+- [✓] Criar pasta `/02-meetings/[YYYY-MM-DD]-hoopers-slam/`
+- [✓] Criar `attio-link.md`
+- [✓] Criar `transcript.md`
+- [✓] Criar `key-insights.md` com análise
+- [✓] Criar `action-items.md`
+- [✓] Atualizar `/02-meetings/INDEX.md`
 
-**OUTPUT**:
-- Reunião processada e documentada
-- Insights extraídos
+**OUTPUT REALIZADO**:
+- Pasta `/02-meetings/2025-10-08-hoopers-slam/` com artefactos completos
+- `02-meetings/insights-summary.md` iniciado com síntese desta reunião
+- Insights estruturados prontos para alimentar Sprint 4
 
 ---
 
@@ -234,6 +235,8 @@
 
 **OUTPUT**:
 - Reuniões adicionais processadas
+  - [✓] 2025-10-08 · Hoopers <> Liga Portugal (`/02-meetings/2025-10-08-liga-portugal/`)
+  - [✓] 2025-10-13 · Hoopers @Meeting Room (interno) (`/02-meetings/2025-10-13-internal-product/`)
 
 ---
 
@@ -246,10 +249,10 @@
 - [ ] Identificar padrões recorrentes
 - [ ] Agrupar necessidades similares
 - [ ] Priorizar por frequência de menção
-- [ ] Criar `/02-meetings/insights-summary.md`
+- [✓] Criar `/02-meetings/insights-summary.md`
 
 **OUTPUT**:
-- `/02-meetings/insights-summary.md` com síntese consolidada
+- `/02-meetings/insights-summary.md` (iniciado; atualizar à medida que novas reuniões forem processadas)
 
 ---
 
@@ -421,6 +424,87 @@
 
 ---
 
+## SPRINT 7: Sales Enablement (Sales Playbook)
+**STATUS**: TODO
+**DEPENDÊNCIAS**: Sprint 6 (Proposta de Futuro) *ou* pode ser iniciado em paralelo com Sprint 6
+**OBJETIVO**: Construir playbook comercial (pitch decks, one-pagers, scripts) alinhado com o produto proposto
+
+### Task 7.1 - Definir messaging por persona [TODO]
+**DEPENDÊNCIAS**: Dashboards propostos (Sprint 6)
+**RESPONSÁVEL**: Equipa Comercial + Produto
+
+**AÇÕES**:
+- [ ] Identificar personas prioritárias (CMO, Sponsorship, Community, Social)
+- [ ] Traduzir KPIs e fluxos do novo dashboard em mensagens de valor por persona
+- [ ] Mapear dores vs. benefícios vs. feature demonstrada
+- [ ] Validar messaging com feedback das reuniões (SLAM, Liga, internos)
+
+**OUTPUT**:
+- Documento `07-sales-playbook/messaging-per-persona.md`
+
+---
+
+### Task 7.2 - Preparar one-pagers e pitch deck base [TODO]
+**DEPENDÊNCIAS**: Task 7.1
+**RESPONSÁVEL**: Equipa Comercial/Marketing
+
+**AÇÕES**:
+- [ ] Criar template de one-pager (resumo produto + KPIs + use cases)
+- [ ] Produzir primeiro one-pager (ex.: Liga Portugal) com dados reais/pseudo
+- [ ] Preparar deck base (slides: problema, solução, KPIs chave, casos)
+- [ ] Incluir call-to-actions (piloto, demo personalizada)
+
+**OUTPUT**:
+- Pasta `07-sales-playbook/one-pagers/`
+- `07-sales-playbook/pitch-deck-base.pptx` (ou equivalente)
+
+---
+
+### Task 7.3 - Sales scripts & objections [TODO]
+**DEPENDÊNCIAS**: Task 7.2
+**RESPONSÁVEL**: Equipa Comercial
+
+**AÇÕES**:
+- [ ] Documentar roteiro de demo passo a passo (alinhado com novo dashboard)
+- [ ] Listar principais objeções (preço, dados, integrações) + respostas
+- [ ] Definir métricas de prova de valor (ex.: ROI, tempo para insight)
+- [ ] Ajustar scripts para diferentes mercados (liga, clube, media)
+
+**OUTPUT**:
+- `07-sales-playbook/demo-script.md`
+- `07-sales-playbook/objections-and-responses.md`
+
+---
+
+### Task 7.4 - Integração com CRM & follow-up [TODO]
+**DEPENDÊNCIAS**: Task 7.3
+**RESPONSÁVEL**: Equipa Comercial + Ops
+
+**AÇÕES**:
+- [ ] Definir template de follow-up pós-demo (email, resumo)
+- [ ] Criar checklist de dados necessários no CRM por lead
+- [ ] Documentar processo de passagem de bastão (pré-venda → implementação)
+
+**OUTPUT**:
+- `07-sales-playbook/follow-up-templates/`
+- Checklist CRM (Salesforce/HubSpot)
+
+---
+
+### Task 7.5 - Iteração contínua [TODO]
+**DEPENDÊNCIAS**: Task 7.1-7.4
+**RESPONSÁVEL**: Equipa Comercial
+
+**AÇÕES**:
+- [ ] reavaliar mensagens após cada demo/piloto
+- [ ] registar feedback em `07-sales-playbook/retro.md`
+- [ ] sincronizar com Produto para roadmap futuro
+
+**OUTPUT**:
+- `07-sales-playbook/retro.md` atualizado
+
+---
+
 ## LOG DE PROGRESSO
 
 ### 2025-10-10 (Sessão 1 - Manhã)
@@ -463,6 +547,27 @@
 - **00:35** - Deletado `/OBJECTIVE.md` redundante da raiz
 - **00:40** - Atualizado `/TASKS.md` com progresso real: Sprint 1 e Sprint 2 completos
 - **Próximo**: Atualizar README.md, então Sprint 3
+
+### 2025-10-11 (Sessão 4 - Sprint 3 Kickoff)
+- **09:30** - Recebida transcrição da reunião Hoopers x SLAM (Attio)
+- **09:40** - Criada pasta `/02-meetings/2025-10-08-hoopers-slam/` com `attio-link.md`, `transcript.md`, `key-insights.md`, `action-items.md`
+- **10:00** - Atualizados `02-meetings/INDEX.md` e `insights-summary.md` com síntese inicial
+- **10:15** - TASKS.md atualizado (Task 3.1 ✅) e Sprint 3 marcado como em progresso
+- **Próximo**: Aguardar novos links de reuniões (Task 3.2) e preparar síntese cross-meetings (Task 3.3)
+
+### 2025-10-11 (Sessão 5 - Liga Portugal)
+- **11:15** - Recebido link Attio da reunião Hoopers <> Liga Portugal (introdução à Liga)
+- **11:25** - Processados artefactos completos em `/02-meetings/2025-10-08-liga-portugal/`
+- **11:35** - Atualizados `02-meetings/INDEX.md`, `insights-summary.md` e Task 3.2 (registo da reunião adicional)
+- **11:45** - Preparação de follow-ups (one-pager, agendamento com Diogo Lourenço e João Cardoso) destacada em `action-items.md`
+- **Próximo**: Aguardar confirmação de nova reunião com equipa de fan experience (Task 3.2 continua) e consolidar padrões para Task 3.3
+
+### 2025-10-11 (Sessão 6 - Alinhamento Interno)
+- **12:10** - Recebida transcrição da reunião interna “Hoopers @Meeting Room”
+- **12:25** - Criada pasta `/02-meetings/2025-10-13-internal-product/` com artefactos completos
+- **12:45** - Atualizados `INDEX.md`, `insights-summary.md`, `insights-overview.md` e Task 3.2 com o novo registo
+- **13:00** - Identificados action items para reestruturar produto e preparar demos (NYC/Liga Summit)
+- **Próximo**: Executar redesign de dashboards (coordenação Produto/Comercial) e incorporar insights na síntese do Sprint 4
 
 ---
 

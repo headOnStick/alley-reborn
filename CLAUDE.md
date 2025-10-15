@@ -6,7 +6,7 @@ Seu objetivo é analisar um portal em fase alfa e redesenhá-lo baseado em feedb
 
 ## Regras Fundamentais
 1. **NUNCA invente informação**. Se não souber, pergunte ao usuário.
-2. **SEMPRE consulte OBJECTIVE.md** antes de iniciar qualquer tarefa para entender o contexto.
+2. **SEMPRE consulte `/01-context/objective.md`** antes de iniciar qualquer tarefa para entender o contexto.
 3. **SEMPRE consulte TASKS.md** para saber qual tarefa executar e seu status.
 4. **SEMPRE atualize TASKS.md** após completar uma tarefa (marcar como concluída, iniciar próxima).
 5. **Todos os outputs** devem ser em formato markdown otimizado para leitura por IA.
@@ -32,28 +32,48 @@ Seu objetivo é analisar um portal em fase alfa e redesenhá-lo baseado em feedb
 ### Objetivo do Projeto
 Redesenhar a estrutura do produto (páginas, navegação, hierarquia de informação, KPIs) para alinhar com necessidades reais dos clientes e regras de negócio.
 
+## Documentos Essenciais (onde procurar cada tipo de informação)
+
+- `README.md` → mapa rápido do repositório, status de sprints e navegação sugerida.
+- `CLAUDE.md` → este documento com regras de operação, templates e apontadores de conteúdo.
+- `TASKS.md` → backlog completo, dependências, log de sessões e tarefa ativa.
+- `01-context/objective.md` → missão do projeto, escopo, critérios de sucesso e fases.
+- `01-context/platform-overview.md` → visão funcional/técnica do produto Alley e capacidades de IA.
+- `01-context/data-schema.md` → entidades da BD, métricas derivadas e taxonomias (165 KPIs).
+- `01-context/api-reference.md` → lista de 138 endpoints e categorias expostas pelo backend.
+- `01-context/access-credentials.md` → credenciais e regras de uso (consultar antes de usar Playwright).
+- `01-context/resources.md` → referências para Git, Attio, ferramentas automação e checklist por sprint.
+- `01-context/stakeholders.md` → papéis, responsabilidades e protocolo de comunicação com André Rocha.
+- `01-context/glossary.md` → definições de termos e métricas proprietárias.
+- `02-meetings/INDEX.md` → catálogo de reuniões processadas; cada pasta contém transcrição, insights e ações.
+- `03-portal-audit/sitemap.md` → inventário detalhado das páginas, tabs, KPIs e flows (1 546 linhas).
+- `03-portal-audit/screenshots/` → 26 capturas flat correspondentes às páginas/tabs auditadas.
+- `04-discovery-synthesis/*.md` → sínteses consolidadas (necessidades, dores, regras, oportunidades).
+- `05-gap-analysis/TEMPLATE-gap-analysis.md` → template mestre para comparar estado atual vs desejado.
+- `06-future-product/` → espaço reservado para visão futura, IA proposta, roadmap e requirements.
+- `templates/` → coleções de templates reutilizáveis para reuniões, páginas e gap analysis.
+
 ## Estrutura de Informação
 
 ```
 /Alley-Reborn/
-├── CLAUDE.md              ← Você está aqui (instruções de sistema)
-├── TASKS.md               ← Lista de tarefas e tracking de progresso
-├── OBJECTIVE.md           ← Contexto detalhado do projeto
-├── README.md              ← Mapa de navegação (opcional, para humanos)
+├── CLAUDE.md              ← Você está aqui (instruções operacionais para agentes)
+├── TASKS.md               ← Lista de tarefas, dependências e log de sessões
+├── README.md              ← Visão geral do projeto para onboarding rápido
 │
-├── 01-context/            ← Contexto e informações base
-│   ├── objective.md           # Objetivos detalhados
-│   ├── platform-overview.md   # Overview técnico da plataforma
-│   ├── data-schema.md         # ⭐ Schema da base de dados (4 entidades, ~165 KPIs)
-│   ├── api-reference.md       # ⭐ API Reference (138 endpoints, 19 categorias)
-│   ├── access-credentials.md  # Credenciais de acesso (apenas)
-│   ├── resources.md           # Recursos técnicos (Git, Attio, ferramentas)
-│   ├── stakeholders.md        # Stakeholders e quando contactar
-│   └── glossary.md            # Termos e definições
+├── 01-context/            ← Contexto de negócio, técnico e acesso
+│   ├── objective.md           # Objetivo, escopo, deliverables e métricas de sucesso
+│   ├── platform-overview.md   # Visão funcional/técnica e capacidades da plataforma
+│   ├── data-schema.md         # ⭐ Schema completo (entidades, métricas derivadas, IA)
+│   ├── api-reference.md       # ⭐ Catálogo de 138 endpoints agrupados por domínio
+│   ├── access-credentials.md  # Credenciais e regras de segurança/limitações
+│   ├── resources.md           # Recursos externos, ferramentas e checklist por sprint
+│   ├── stakeholders.md        # Stakeholder map e protocolo de comunicação
+│   └── glossary.md            # Glossário de termos, KPIs e scores proprietários
 │
-├── 02-meetings/           ← Reuniões com clientes
-│   ├── INDEX.md               # Lista cronológica de todas as reuniões
-│   ├── insights-summary.md    # Síntese cross-meeting de insights
+├── 02-meetings/           ← Processamento de reuniões de clientes
+│   ├── INDEX.md               # Lista cronológica das reuniões processadas
+│   ├── insights-summary.md    # Síntese consolidada (a preencher após múltiplas reuniões)
 │   └── [YYYY-MM-DD]-[cliente-tema]/
 │       ├── attio-link.md      # Link original da reunião
 │       ├── transcript.md      # Transcrição completa
@@ -73,29 +93,30 @@ Redesenhar a estrutura do produto (páginas, navegação, hierarquia de informa�
 │   ├── pages-inventory/       # Análise detalhada por página (pendente)
 │   │   └── [page-name].md
 │   ├── components-matrix.md   # Matriz de componentes por página (pendente)
-│   ├── kpis-inventory.md      # Inventário de todos os KPIs (pendente)
-│   ├── forms-inventory.md     # Inventário de formulários (pendente)
-│   └── technical-stack.md     # Stack técnica (do Git) (pendente)
+│   ├── kpis-inventory.md      # Inventário consolidado de KPIs (pendente)
+│   ├── forms-inventory.md     # Inventário de filtros e formulários (pendente)
+│   └── technical-stack.md     # Stack técnico do frontend (pendente, via repo)
 │
-├── 04-discovery-synthesis/ ← Síntese de necessidades
-│   ├── user-needs.md          # O que os clientes realmente precisam
-│   ├── pain-points.md         # Problemas identificados
-│   ├── business-rules.md      # Regras de negócio extraídas
-│   └── opportunities.md       # Oportunidades identificadas
+├── 04-discovery-synthesis/ ← Síntese das descobertas
+│   ├── user-needs.md          # Necessidades priorizadas por frequência/importância
+│   ├── pain-points.md         # Problemas experienciados pelos clientes
+│   ├── business-rules.md      # Regras e constraints de negócio validadas
+│   └── opportunities.md       # Oportunidades mapeadas para futuro roadmap
 │
-├── 05-gap-analysis/       ← Análise de gaps
-│   ├── current-vs-needs.md        # Gap entre atual e necessário
-│   ├── features-to-remove.md      # Funcionalidades a remover
-│   ├── features-to-add.md         # Funcionalidades a adicionar
-│   └── features-to-redesign.md    # Funcionalidades a redesenhar
+├── 05-gap-analysis/       ← Análise de lacunas entre estado atual e desejado
+│   └── TEMPLATE-gap-analysis.md  # Template para relatórios de gap por página/fluxo
 │
-└── 06-future-product/     ← Proposta de redesenho
-    ├── product-vision.md          # Visão do produto redesenhado
-    ├── page-structures/           # Estrutura proposta por página
-    │   └── [page-name]-proposal.md
-    ├── information-architecture.md # Arquitetura de informação
-    ├── roadmap.md                 # Roadmap de implementação
-    └── requirements.md            # Requirements funcionais e técnicos
+├── 06-future-product/     ← Proposta de visão futura (a ser preenchida)
+│   ├── product-vision.md          # Storytelling e objetivos do produto futuro
+│   ├── page-structures/           # Estruturas de páginas redesenhadas (um arquivo por página)
+│   ├── information-architecture.md # IA global proposta
+│   ├── roadmap.md                 # Plano faseado de implementação
+│   └── requirements.md            # Requisitos funcionais e técnicos de entrega
+│
+└── templates/             ← Biblioteca de templates prontos para uso
+    ├── meeting-analysis/         # Estruturas base para processamento de reuniões
+    ├── page-analysis/            # Layout de análises de página
+    └── gap-analysis/             # Modelos auxiliares para comparar estados
 ```
 
 ---
