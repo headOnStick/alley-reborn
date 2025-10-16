@@ -2,7 +2,7 @@
 
 ## ESTADO ATUAL
 **TAREFA_ATIVA**: Sprint 3 - Processar Reuniões (Task 3.2 em curso)
-**ÚLTIMA_ATUALIZAÇÃO**: 2025-10-11 13:30
+**ÚLTIMA_ATUALIZAÇÃO**: 2025-10-16 15:45
 **PROGRESSO_GERAL**: 11/23 tarefas completadas (48%)
 
 ---
@@ -237,6 +237,9 @@
 - Reuniões adicionais processadas
   - [✓] 2025-10-08 · Hoopers <> Liga Portugal (`/02-meetings/2025-10-08-liga-portugal/`)
   - [✓] 2025-10-13 · Hoopers @Meeting Room (interno) (`/02-meetings/2025-10-13-internal-product/`)
+  - [✓] 2025-10-15 · Demo Alley x Victor (NBA Brasil) (`/02-meetings/2025-10-15-demo-alley-victor/`)
+  - [✓] 2025-10-15 · Demo Alley #2 - Rodrigo (ex-CEO NBA) (`/02-meetings/2025-10-15-demo-alley-rodrigo/`)
+  - [✓] 2025-10-16 · A Bola x Hoopers Update + Lunch (`/02-meetings/2025-10-16-a-bola/`)
 
 ---
 
@@ -563,11 +566,28 @@
 - **Próximo**: Aguardar confirmação de nova reunião com equipa de fan experience (Task 3.2 continua) e consolidar padrões para Task 3.3
 
 ### 2025-10-11 (Sessão 6 - Alinhamento Interno)
-- **12:10** - Recebida transcrição da reunião interna “Hoopers @Meeting Room”
+- **12:10** - Recebida transcrição da reunião interna "Hoopers @Meeting Room"
 - **12:25** - Criada pasta `/02-meetings/2025-10-13-internal-product/` com artefactos completos
 - **12:45** - Atualizados `INDEX.md`, `insights-summary.md`, `insights-overview.md` e Task 3.2 com o novo registo
 - **13:00** - Identificados action items para reestruturar produto e preparar demos (NYC/Liga Summit)
 - **Próximo**: Executar redesign de dashboards (coordenação Produto/Comercial) e incorporar insights na síntese do Sprint 4
+
+### 2025-10-16 (Sessão 7 - A Bola x Hoopers)
+- **15:00** - Recebida transcrição da reunião A Bola x Hoopers Update + Lunch (16 OUT)
+- **15:10** - Criada pasta `/02-meetings/2025-10-16-a-bola/` com artefactos completos
+- **15:30** - Processados `attio-link.md`, `transcript.md` (transcrição limpa e estruturada)
+- **15:35** - Criado `key-insights.md` com análise detalhada (fit produto-mercado 9/10)
+- **15:40** - Criado `action-items.md` com follow-ups estratégicos (painel 19 OUT, plano estruturado, visita A Bola)
+- **15:42** - Atualizado `INDEX.md` com nova reunião
+- **15:45** - Atualizado `insights-summary.md` com padrões emergentes (real-time analytics, gateway grupos empresariais, vertical mídia validada, betting)
+- **DESCOBERTAS CRÍTICAS**:
+  - **Vertical Mídia validada**: A Bola (5M users, grupo 8 empresas) = multiplicador 8x
+  - **Real-time analytics** = diferencial crítico para mídia (novo padrão identificado)
+  - **Gateway grupos empresariais** = novo modelo de go-to-market (1 piloto → expansão grupo)
+  - **Expansão geográfica baseada em dados** = Hoopers como "research partner"
+  - **Vertical betting** em exploração (conexão Tiago Simões/BetLeague via A Bola)
+  - **Quote Ricardo Peres**: "Não é o 2.0, é o 10.0" — fit produto-mercado muito alto
+- **Próximo**: Aguardar novas reuniões (Task 3.2 continua) ou avançar para síntese cross-meetings (Task 3.3)
 
 ---
 
@@ -604,4 +624,4 @@ Este ficheiro serve como referência do status do projeto. A IA o manterá atual
 
 ---
 
-**Última atualização automática**: 2025-10-10 23:50
+**Última atualização automática**: 2025-10-16 15:45
